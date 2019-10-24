@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Purpleid Website`,
-    description: "Official page for Purpleid",
+    title: `purplepid website`,
+    description: "Official page for purplepid",
     author: `Bruno Mikec`
   },
   plugins: [
