@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@purplepid/eslint-config-react": "0.0.1",
     "gatsby": "^2.16.1",
     "gatsby-image": "^2.2.29",
     "gatsby-plugin-google-analytics": "^2.1.23",
@@ -22,19 +23,16 @@
     "react-helmet": "^5.2.1"
   },
   "browserslist": [
-    "defaults"
+    "> 1% in SE"
   ],
   "devDependencies": {
     "@testing-library/dom": "^6.8.1",
     "@testing-library/react": "^9.3.0",
     "babel-jest": "^24.9.0",
     "babel-preset-gatsby": "^0.2.20",
-    "browserslist": "4.7.1",
     "editorconfig": "0.15.3",
-    "eslint": "6.5.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
-    "prettier": "^1.18.2",
     "react-test-renderer": "^16.11.0"
   },
   "keywords": [
@@ -47,7 +45,8 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
