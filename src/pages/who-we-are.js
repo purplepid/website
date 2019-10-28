@@ -3,11 +3,12 @@ import React from 'react';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import './index.scss';
+import WhoPageComponent from '../components/WhoPageComponent';
 
 const WhoWeArePage = () => (
     <Layout>
         <SEO title="WhoWeAre" />
-        <p>Website under construction!</p>
+        <WhoPageComponent />
     </Layout>
 );
 

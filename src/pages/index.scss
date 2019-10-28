@@ -1,3 +1,9 @@
+/*
+** Index.scss differs from other .scss files within this
+** project as it serves as a global style sheet while other
+** .scss files have a respective component they belong to
+*/
+
 * {
     margin: 0;
     background: #771bff;
@@ -6,3 +12,60 @@
     font-style: normal;
     font-weight: normal;
 }
+
+.buttonBase {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    border-radius: 99px;
+    border: 1px solid;
+    padding: 9px 11.25px;
+}
+
+.buttonWhite {
+    @extend .buttonBase;
+    color: #771BFF;
+    background: #ffffff;
+}
+
+.buttonGreen {
+    @extend .buttonBase;
+    color: #ffffff;
+    background: #48E6BC;
+    border-color: #48E6BC;
+}
+
+.buttonRed {
+    @extend .buttonBase;
+    color: #ffffff;
+    background: #FC3F7F;
+    border-color: #FC3F7F;
+}
+
+.buttonWhiteOutline {
+    @extend .buttonBase;
+    color: #ffffff;
+    background: transparent;
+    border-color: #ffffff;
+}
+
+.buttonWhiteInverse {
+    @extend .buttonBase;
+    background: #771bff;
+    color: #ffffff;
+}
+
+.buttonWhiteOutlineInverse {
+    @extend .buttonBase;
+    background: transparent;
+    color: #771bff;
+    border-color: #771bff;
+}
+

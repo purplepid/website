@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import Styles from "./Footer.module.scss";
+import Styles from './Footer.module.scss';
 
 const Footer = () => {
     return (
@@ -20,7 +20,7 @@ const Footer = () => {
                         <div className={Styles.npmIcon} />
                     </div>
                 </div>
-                <div>Follow us on social media</div>
+                <div className={Styles.followUs}>Follow us on social media</div>
                 <div>© purplepid</div>
             </div>
         </React.Fragment>
