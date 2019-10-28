@@ -4,11 +4,11 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import './index.scss';
 
-const IndexPage = () => (
+const WhoWeArePage = () => (
     <Layout>
-        <SEO title="Home" />
+        <SEO title="WhoWeAre" />
         <p>Website under construction!</p>
     </Layout>
 );
 
-export default IndexPage;
+export default WhoWeArePage;

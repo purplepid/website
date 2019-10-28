@@ -1,4 +1,10 @@
 .navContent {
-    padding: 1.45rem 1.0875rem;
-    background: pink;
+
+    a {
+        text-decoration: none;
+    }
+
+    a:first-of-type {
+        margin-right: 20px;
+    }
 }

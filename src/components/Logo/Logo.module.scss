@@ -1,4 +1,25 @@
 .logoContent {
-    padding: 1.45rem 1.0875rem;
-    background: pink;
+    .logo {
+        height: 34px;
+        width: 34px;
+        background: transparent;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        display: inline-block;
+
+        div {
+            width: 9.82px;
+            height: 9.82px;
+            background: #ffffff;
+            border-radius: 50%;
+            position: relative;
+            top: 35%;
+            left: 35%;
+        }
+    }
+
+    span {
+        position: absolute;
+        margin: 10px 0 10px 5px;
+    }
 }
