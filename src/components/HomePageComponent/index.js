@@ -1,19 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Styles from './HomePageComponent.module.scss';
 
-const HomePageComponent = () => {
+const HomePageComponent = ({ data }) => {
     return (
         <React.Fragment>
             <div className={Styles.pageContainer}>
-                <div className={Styles.title}>Here goes nothing!</div>
+                <div className={Styles.title}> {data.title} </div>
 
                 <div className={Styles.article}>
-                    <div className={Styles.articleTitle}>In need of competence?</div>
-                    <div className={Styles.articleText}>
-                        Some kind of salespitch for our consultants and why companies should choose us. And below a nice
-                        looking button. Maybe some more details abou the company?
-                    </div>
+                    <div className={Styles.articleTitle}> {data.articles[0].title}</div>
+                    <div className={Styles.articleText}>{data.articles[0].text}</div>
                     <div className={Styles.articleActions}>
                         <button className="buttonWhite" type="button">
                             READ MORE
@@ -26,11 +24,8 @@ const HomePageComponent = () => {
                 </div>
 
                 <div className={Styles.article}>
-                    <div className={Styles.articleTitle}>One of us?</div>
-                    <div className={Styles.articleText}>
-                        Not sure what we will write here. But probably a small intro text about us. Also we should
-                        probably have some cool finish of this question an Apply button close by.
-                    </div>
+                    <div className={Styles.articleTitle}>{data.articles[1].title}</div>
+                    <div className={Styles.articleText}>{data.articles[1].text}</div>
                     <div className={Styles.articleActions}>
                         <button className="buttonRed" type="button">
                             APPLY{' '}
@@ -40,6 +35,14 @@ const HomePageComponent = () => {
             </div>
         </React.Fragment>
     );
+};
+
+HomePageComponent.defaultProps = {
+    title: ''
+};
+
+HomePageComponent.propTypes = {
+    title: PropTypes.string
 };
 
 export default HomePageComponent;

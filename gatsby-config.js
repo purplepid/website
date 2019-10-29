@@ -15,6 +15,13 @@ module.exports = {
                 path: `${__dirname}/src/images`
             }
         },
+        'gatsby-transformer-json',
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/content/`
+            }
+        },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`
         // this (optional) plugin enables Progressive Web App + Offline functionality
