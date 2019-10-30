@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './WhoPageComponent.module.scss';
 
-const WhoPageComponent = ({ data }) => {
+const WhoPageComponent = data => {
     return (
         <React.Fragment>
             <div className={styles.pageContainer}>
@@ -10,11 +10,8 @@ const WhoPageComponent = ({ data }) => {
 
                 <div className={styles.section}>
                     <p className={styles.article}>{data.sections[0].articles[0].text}</p>
-
                     <p className={styles.article}>{data.sections[0].articles[1].text}</p>
-
                     <p className={styles.article}>{data.sections[0].articles[2].text}</p>
-
                     <p className={styles.article}>{data.sections[0].articles[3].text}</p>
                 </div>
             </div>

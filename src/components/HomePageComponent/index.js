@@ -1,10 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import CustomButton from '../Button/index';
 import styles from './HomePageComponent.module.scss';
 
-const HomePageComponent = ({ data }) => {
+const HomePageComponent = data => {
     return (
         <React.Fragment>
             <div className={styles.pageContainer}>
@@ -35,14 +34,6 @@ const HomePageComponent = ({ data }) => {
             </div>
         </React.Fragment>
     );
-};
-
-HomePageComponent.defaultProps = {
-    title: ''
-};
-
-HomePageComponent.propTypes = {
-    title: PropTypes.string
 };
 
 export default HomePageComponent;

@@ -9,10 +9,6 @@ This is a project intended to promote Purpleid and let the world know who we are
 
 This website also serves as a training ground for me (Bruno) as the current developer working on this and any other developer who might continue working on this website in my stead.
 
-## 🚀 Quick start
-
-Under construction
-
 ## 🧐 What's inside?
 
 A quick look at the top-level files found in this repository
@@ -20,6 +16,7 @@ A quick look at the top-level files found in this repository
     ├── __mocks__
     ├── cypress      
     ├── src
+    ├── content
     ├── .gitignore
     ├── cypress.json
     ├── gatsby-browser.js
@@ -70,8 +67,7 @@ A quick look at the top-level files found in this repository
 
 18.  **`.prettierrc`**:  A file that contains Prettier configuraiton options
 
-
-
-
+19. **`/content`**: A file that contains JSON files that have all the string data for the website 
 
 ## 🎓 Additional documentation and information
+...
