@@ -1,5 +1,5 @@
 .logoContent {
-    .logo {
+    .logoOuter {
         height: 34px;
         width: 34px;
         background: transparent;
@@ -7,7 +7,7 @@
         border-radius: 50%;
         display: inline-block;
 
-        div {
+        .logoInner {
             width: 9.82px;
             height: 9.82px;
             background: #ffffff;
@@ -18,7 +18,7 @@
         }
     }
 
-    span {
+    .logoText {
         position: absolute;
         margin: 10px 0 10px 5px;
     }

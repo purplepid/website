@@ -5,7 +5,11 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@purplepid/eslint-config-react": "0.0.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
     "gatsby": "^2.16.1",
     "gatsby-image": "^2.2.29",
     "gatsby-plugin-google-analytics": "^2.1.23",
@@ -27,6 +31,7 @@
     "> 1% in SE"
   ],
   "devDependencies": {
+    "@purplepid/eslint-config-react": "0.0.1",
     "@testing-library/dom": "^6.8.1",
     "@testing-library/react": "^9.3.0",
     "babel-jest": "^24.9.0",

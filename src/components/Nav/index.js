@@ -1,16 +1,16 @@
 import React from 'react';
 
 import { Link } from 'gatsby';
-import Styles from './Nav.module.scss';
+import styles from './Nav.module.scss';
 
 const Nav = () => {
     return (
         <React.Fragment>
-            <div className={Styles.navContent}>
-                <Link activeClassName={Styles.activeLink} to="/who-we-are">
+            <div className={styles.navContent}>
+                <Link activeClassName={styles.activeLink} className={styles.navLink} to="/who-we-are">
                     who are we?
                 </Link>
-                <Link activeClassName={Styles.activeLink} to="/contact">
+                <Link activeClassName={styles.activeLink} className={styles.navLink} to="/contact">
                     {' '}
                     contact{' '}
                 </Link>

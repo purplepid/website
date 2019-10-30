@@ -26,38 +26,19 @@
         border-radius: 50%;
         margin: 5px;
         cursor: pointer;
-    }
+        text-align: center;
 
-    .innerIconContainer {
-        height: 24px;
-        width: 24px;
-        background-repeat: no-repeat;
-        left: 22%;
-        top: 22%;
-        position: relative;
-    }
+        .innerIconContainer {
+            height: 24px;
+            width: 24px;
+            background-repeat: no-repeat;
+            left: 22%;
+            top: 22%;
+            position: relative;
 
-    .gitIcon {
-        @extend .innerIconContainer;
-        background-image: url("./../../images/git.png");
-    }
-
-    .linkedinIcon {
-        @extend .innerIconContainer;
-        left: 25%;
-        background-image: url("./../../images/in.png");
-    }
-
-    .facebookIcon {
-        @extend .innerIconContainer;
-        left: 35%;
-        background-image: url("./../../images/f.png");
-    }
-
-    .npmIcon {
-        @extend .innerIconContainer;
-        height: 15px;
-        top: 40%;
-        background-image: url("./../../images/npm.png");
+            :first-child {
+                font-size: 24px;
+            }
+        }
     }
 }

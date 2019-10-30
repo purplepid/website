@@ -1,21 +1,21 @@
 import React from 'react';
 
-import Styles from './WhoPageComponent.module.scss';
+import styles from './WhoPageComponent.module.scss';
 
 const WhoPageComponent = ({ data }) => {
     return (
         <React.Fragment>
-            <div className={Styles.pageContainer}>
-                <div className={Styles.title}> {data.title} </div>
+            <div className={styles.pageContainer}>
+                <h1 className={styles.title}> {data.title} </h1>
 
-                <div className={Styles.section}>
-                    <div className={Styles.article}>{data.sections[0].articles[0].text}</div>
+                <div className={styles.section}>
+                    <p className={styles.article}>{data.sections[0].articles[0].text}</p>
 
-                    <div className={Styles.article}>{data.sections[0].articles[1].text}</div>
+                    <p className={styles.article}>{data.sections[0].articles[1].text}</p>
 
-                    <div className={Styles.article}>{data.sections[0].articles[2].text}</div>
+                    <p className={styles.article}>{data.sections[0].articles[2].text}</p>
 
-                    <div className={Styles.article}>{data.sections[0].articles[3].text}</div>
+                    <p className={styles.article}>{data.sections[0].articles[3].text}</p>
                 </div>
             </div>
         </React.Fragment>
