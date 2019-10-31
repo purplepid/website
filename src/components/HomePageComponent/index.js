@@ -1,17 +1,21 @@
 import React from 'react';
 
 import CustomButton from '../Button/index';
+import PageContainer from '../PageContainer/index';
 import styles from './HomePageComponent.module.scss';
 
-const HomePageComponent = data => {
+const HomePageComponent = () => {
     return (
         <React.Fragment>
-            <div className={styles.pageContainer}>
-                <h1 className={styles.title}> {data.title} </h1>
+            <PageContainer direction="column">
+                <h1 className={styles.title}>Here goes nothing!</h1>
 
                 <div className={styles.article}>
-                    <h2 className={styles.articleTitle}> {data.articles[0].title}</h2>
-                    <p className={styles.articleText}>{data.articles[0].text}</p>
+                    <h2 className={styles.articleTitle}>In need of competence?</h2>
+                    <p className={styles.articleText}>
+                        Some kind of salespitch for our consultants and why companies should choose us. And below a nice
+                        looking button. Maybe some more details abou the company?
+                    </p>
                     <div className={styles.articleActions}>
                         <CustomButton className="buttonWhite" component="button">
                             read more
@@ -23,15 +27,18 @@ const HomePageComponent = data => {
                 </div>
 
                 <div className={styles.article}>
-                    <h2 className={styles.articleTitle}>{data.articles[1].title}</h2>
-                    <p className={styles.articleText}>{data.articles[1].text}</p>
+                    <h2 className={styles.articleTitle}>One of us?</h2>
+                    <p className={styles.articleText}>
+                        Not sure what we will write here. But probably a small intro text about us. Also we should
+                        probably have some cool finish of this question an Apply button close by.
+                    </p>
                     <div className={styles.articleActions}>
                         <CustomButton className="buttonRed" component="button">
                             apply
                         </CustomButton>
                     </div>
                 </div>
-            </div>
+            </PageContainer>
         </React.Fragment>
     );
 };

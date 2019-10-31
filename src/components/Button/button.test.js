@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 // Example unit test
 
-test('I guess we did!', () => {
+test('omit function', () => {
     expect(true).toBeTruthy();
 });

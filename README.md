@@ -16,7 +16,6 @@ A quick look at the top-level files found in this repository
     ├── __mocks__
     ├── cypress      
     ├── src
-    ├── content
     ├── .gitignore
     ├── cypress.json
     ├── gatsby-browser.js
@@ -66,8 +65,6 @@ A quick look at the top-level files found in this repository
 17.  **`.editorconfig`**:  A file containing Editorconfig configuration options
 
 18.  **`.prettierrc`**:  A file that contains Prettier configuraiton options
-
-19. **`/content`**: A file that contains JSON files that have all the string data for the website 
 
 ## 🎓 Additional documentation and information
 ...

@@ -15,15 +15,14 @@ module.exports = {
                 path: `${__dirname}/src/images`
             }
         },
-        'gatsby-transformer-json',
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/content/`
-            }
-        },
         `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`
+        `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+                fonts: [`Rubik`]
+            }
+        }
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,
