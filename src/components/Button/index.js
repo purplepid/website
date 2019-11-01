@@ -1,34 +1,53 @@
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 
-function omit(obj, omitKeys) {
-    const result = {};
-    Object.keys(obj).forEach(key => {
-        if (omitKeys.indexOf(key) === -1) {
-            result[key] = obj[key];
-        }
-    });
-    return result;
-}
-
 const propTypes = {
     className: PropTypes.string,
+    color: PropTypes.string,
+    background: PropTypes.string,
     children: PropTypes.node.isRequired,
     disabled: PropTypes.bool,
-    onClick: PropTypes.func,
-    component: PropTypes.oneOfType([PropTypes.object])
+    onClick: PropTypes.func
 };
 
 const defaultProps = {
     className: '',
     disabled: false,
-    onClick: () => {},
-    component: 'button'
+    color: '',
+    background: '',
+    onClick: () => {}
 };
 
 const CustomButton = props => {
-    const { className, children, onClick, disabled, ...attributes } = omit(props, ['component']);
-    let { component: Component } = props;
+    const { className, color, background, children, onClick, disabled, ...attributes } = props;
+
+    const buttonStyle = {
+        fontFamily: 'Roboto',
+        fontStyle: 'normal',
+        fontWeight: '500',
+        fontSize: '16px',
+        lineHeight: '19px',
+        display: 'flex',
+        alignItems: 'center',
+        textAlign: 'center',
+        letterSpacing: '0.75px',
+        textTransform: 'uppercase',
+        borderRadius: '99px',
+        border: '1px solid',
+        padding: '9px 11.25px',
+        cursor: 'pointer',
+        transition: ['border-radius', '0.5s', 'ease-out'],
+        color,
+        background,
+        borderColor: background,
+        '&:hover': {
+            borderRadius: '0px solid',
+            color: 'black'
+        },
+        '&:focus': {
+            borderSize: '0px'
+        }
+    };
 
     const buttonOnClick = useCallback(
         e => {
@@ -44,14 +63,17 @@ const CustomButton = props => {
         [disabled, onClick]
     );
 
-    if (attributes.href && Component === 'button') {
-        Component = 'a';
-    }
-
     return (
-        <Component disabled={disabled} className={className} onClick={buttonOnClick} {...attributes}>
+        <button
+            type="button"
+            disabled={disabled}
+            className={className}
+            style={buttonStyle}
+            onClick={buttonOnClick}
+            {...attributes}
+        >
             {children}
-        </Component>
+        </button>
     );
 };
 

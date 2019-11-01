@@ -17,10 +17,10 @@ const HomePageComponent = () => {
                         looking button. Maybe some more details abou the company?
                     </p>
                     <div className={styles.articleActions}>
-                        <CustomButton className="buttonWhite" component="button">
+                        <CustomButton color="#771BFF" background="#ffffff">
                             read more
                         </CustomButton>
-                        <CustomButton className="buttonRed" component="button">
+                        <CustomButton color="#ffffff" background="#FC3F7F">
                             contact us
                         </CustomButton>
                     </div>
@@ -33,7 +33,7 @@ const HomePageComponent = () => {
                         probably have some cool finish of this question an Apply button close by.
                     </p>
                     <div className={styles.articleActions}>
-                        <CustomButton className="buttonRed" component="button">
+                        <CustomButton color="#ffffff" background="#FC3F7F">
                             apply
                         </CustomButton>
                     </div>
