@@ -11,8 +11,7 @@ const Nav = () => {
                     who are we?
                 </Link>
                 <Link activeClassName={styles.activeLink} className={styles.navLink} to="/contact">
-                    {' '}
-                    contact{' '}
+                    contact
                 </Link>
             </div>
         </React.Fragment>

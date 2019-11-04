@@ -8,7 +8,7 @@ const NotFoundComponent = () => (
     <React.Fragment>
         <PageContainer direction="column">
             <h1>You just hit a route that doesn&#39;t exist :(</h1>
-            <p> feels bad man</p>
+            <p>feels bad man</p>
         </PageContainer>
     </React.Fragment>
 );

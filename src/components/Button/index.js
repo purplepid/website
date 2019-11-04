@@ -1,8 +1,9 @@
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 
+import style from './Button.module.scss';
+
 const propTypes = {
-    className: PropTypes.string,
     color: PropTypes.string,
     background: PropTypes.string,
     children: PropTypes.node.isRequired,
@@ -11,7 +12,6 @@ const propTypes = {
 };
 
 const defaultProps = {
-    className: '',
     disabled: false,
     color: '',
     background: '',
@@ -19,35 +19,7 @@ const defaultProps = {
 };
 
 const CustomButton = props => {
-    const { className, color, background, children, onClick, disabled, ...attributes } = props;
-
-    const buttonStyle = {
-        fontFamily: 'Roboto',
-        fontStyle: 'normal',
-        fontWeight: '500',
-        fontSize: '16px',
-        lineHeight: '19px',
-        display: 'flex',
-        alignItems: 'center',
-        textAlign: 'center',
-        letterSpacing: '0.75px',
-        textTransform: 'uppercase',
-        borderRadius: '99px',
-        border: '1px solid',
-        padding: '9px 11.25px',
-        cursor: 'pointer',
-        transition: ['border-radius', '0.5s', 'ease-out'],
-        color,
-        background,
-        borderColor: background,
-        '&:hover': {
-            borderRadius: '0px solid',
-            color: 'black'
-        },
-        '&:focus': {
-            borderSize: '0px'
-        }
-    };
+    const { color, background, children, onClick, disabled, ...attributes } = props;
 
     const buttonOnClick = useCallback(
         e => {
@@ -67,8 +39,8 @@ const CustomButton = props => {
         <button
             type="button"
             disabled={disabled}
-            className={className}
-            style={buttonStyle}
+            className={style.button}
+            style = {{color, background, borderColor: background}}
             onClick={buttonOnClick}
             {...attributes}
         >
