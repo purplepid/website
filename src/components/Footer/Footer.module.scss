@@ -1,0 +1,44 @@
+.footerContent {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .followUs {
+        margin: 15px 0;
+    }
+}
+
+.socialIconsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .socialIcon {
+        height: 42px;
+        width: 42px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        margin: 5px;
+        cursor: pointer;
+        text-align: center;
+
+        .innerIconContainer {
+            height: 24px;
+            width: 24px;
+            background-repeat: no-repeat;
+            left: 22%;
+            top: 22%;
+            position: relative;
+
+            :first-child {
+                font-size: 24px;
+            }
+        }
+    }
+}

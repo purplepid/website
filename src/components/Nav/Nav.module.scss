@@ -1,0 +1,14 @@
+.navContent {
+
+    .navLink {
+        text-decoration: none;
+    }
+
+    .navLink:first-of-type {
+        margin-right: 20px;
+    }
+}
+
+.activeLink {
+    font-weight: bold;
+}

@@ -1,0 +1,38 @@
+.title {
+    text-align: center;
+    width: 60%;
+    font-size: 72px;
+    line-height: 77px;
+    letter-spacing: -3px;
+}
+
+.article {
+    text-align: center;
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    .articleTitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .articleText {
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .articleActions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+
+        button {
+            margin:5px;
+        }
+    }
+}
