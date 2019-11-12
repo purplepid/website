@@ -1,7 +1,7 @@
-import React, { useCallback } from 'react';
-import PropTypes from 'prop-types';
+import React, { useCallback } from "react";
+import PropTypes from "prop-types";
 
-import style from './Button.module.scss';
+import style from "./Button.module.scss";
 
 const propTypes = {
     color: PropTypes.string,
@@ -13,13 +13,20 @@ const propTypes = {
 
 const defaultProps = {
     disabled: false,
-    color: '',
-    background: '',
+    color: "",
+    background: "",
     onClick: () => {}
 };
 
 const CustomButton = props => {
-    const { color, background, children, onClick, disabled, ...attributes } = props;
+    const {
+        color,
+        background,
+        children,
+        onClick,
+        disabled,
+        ...attributes
+    } = props;
 
     const buttonOnClick = useCallback(
         e => {
@@ -37,10 +44,10 @@ const CustomButton = props => {
 
     return (
         <button
-            type="button"
+            type='button'
             disabled={disabled}
             className={style.button}
-            style = {{color, background, borderColor: background}}
+            style={{ color, background, borderColor: background }}
             onClick={buttonOnClick}
             {...attributes}
         >
