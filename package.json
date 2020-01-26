@@ -31,6 +31,19 @@
   "browserslist": [
     "> 1% in SE"
   ],
+  "eslintConfig": {
+    "extends": [
+      "@purplepid/react"
+    ],
+    "plugins": [
+        "cypress"
+    ],
+    "env": {
+      "node": true,
+      "jest": true,
+      "cypress/globals": true
+    }
+  },
   "devDependencies": {
     "@purplepid/eslint-config-react": "0.0.1",
     "@testing-library/dom": "^6.8.1",
@@ -38,7 +51,7 @@
     "babel-jest": "^25.1.0",
     "babel-preset-gatsby": "^0.2.20",
     "editorconfig": "0.15.3",
-    "identity-obj-proxy": "^3.0.0",
+    "eslint-plugin-cypress": "^2.8.1",
     "jest": "^25.1.0",
     "react-test-renderer": "^16.11.0"
   },

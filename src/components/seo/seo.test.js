@@ -2,4 +2,4 @@
 
 test('Yep!', () => {
     expect(true).toBeTruthy();
-})
+});
