@@ -35,11 +35,11 @@
     "@purplepid/eslint-config-react": "0.0.1",
     "@testing-library/dom": "^6.8.1",
     "@testing-library/react": "^9.3.0",
-    "babel-jest": "^24.9.0",
+    "babel-jest": "^25.1.0",
     "babel-preset-gatsby": "^0.2.20",
     "editorconfig": "0.15.3",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.9.0",
+    "jest": "^25.1.0",
     "react-test-renderer": "^16.11.0"
   },
   "keywords": [
