@@ -1,20 +1,28 @@
-import React from 'react';
+import React from "react";
 
-import CustomButton from '../Button/index';
-import PageContainer from '../PageContainer/index';
-import styles from './HomePageComponent.module.scss';
+import CustomButton from "../Button/index";
+import PageContainer from "../PageContainer/index";
+import styles from "./HomePageComponent.module.scss";
 
 const HomePageComponent = () => {
     return (
         <React.Fragment>
             <PageContainer direction="column">
-                <h1 className={styles.title}>Here goes nothing!</h1>
+                <h1 className={styles.title}>
+                    Creating value through competence.
+                </h1>
 
                 <div className={styles.article}>
-                    <h2 className={styles.articleTitle}>In need of competence?</h2>
+                    <h2 className={styles.articleTitle}>Our Mission</h2>
                     <p className={styles.articleText}>
-                        Some kind of salespitch for our consultants and why companies should choose us. And below a nice
-                        looking button. Maybe some more details abou the company?
+                        We are dedicated to challenge and help mid and large
+                        sized companies to advance in their digital product
+                        development.
+                    </p>
+                    <p className={styles.articleText}>
+                        With more than 15 years of experience in
+                        building scalable and edge-cutting products we are able
+                        to deliver bespoke user experience and technology
                     </p>
                     <div className={styles.articleActions}>
                         <CustomButton color="#771BFF" background="#ffffff">
@@ -29,8 +37,7 @@ const HomePageComponent = () => {
                 <div className={styles.article}>
                     <h2 className={styles.articleTitle}>One of us?</h2>
                     <p className={styles.articleText}>
-                        Not sure what we will write here. But probably a small intro text about us. Also we should
-                        probably have some cool finish of this question an Apply button close by.
+                        Is there an alternative???
                     </p>
                     <div className={styles.articleActions}>
                         <CustomButton color="#ffffff" background="#FC3F7F">

@@ -3,4 +3,9 @@
     max-width: 960;
     padding: 0px 1.0875rem 1.45rem;
     padding-top: 0;
+    flex-grow: 1;
+}
+
+.container {
+    min-height: 100vh;
 }

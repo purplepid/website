@@ -1,5 +1,6 @@
-.navContent {
+@import "./../../../variables";
 
+.navContent {
     .navLink {
         text-decoration: none;
     }
@@ -12,3 +13,10 @@
 .activeLink {
     font-weight: bold;
 }
+
+@media (max-width: $breakpoint-width-s) {
+    .navLink {
+        font-size: 13px;
+    }
+}
+
