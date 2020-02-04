@@ -1,47 +1,37 @@
-@import "./../../variables";
+@import "variables";
 
 .button {
+    outline: 0 !important;
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 22px;
     display: flex;
-    position: relative;
-    overflow: hidden;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.75px;
     text-transform: uppercase;
-    border-radius: 99px;
-    border: 1px solid;
-    padding: 9px 11.25px;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-bottom: 4px solid darken($color: $orange, $amount: 12%);
     cursor: pointer;
-    transition: border-radius 0.3s;
-    transition-timing-function: linear;
+    color: #FFFFFF;
+    background-color: $orange;
 
     &:hover,
+    &:focus {
+        background-color: lighten($color: $orange, $amount: 5%);
+        outline: 0 !important;
+    }
+
     &:active {
-        border-radius: 0px;
+        outline: 0 !important;
+        background-color: darken($color: $orange, $amount: 5%);
+        padding-top: 0.875rem;
+        padding-bottom: 0.625rem;
     }
 
-    &:focus,
-    &:focus-within {
-        outline: transparent;
-        border-radius: 0px;
-    }
-}
-@media (max-width: $breakpoint-width-m) {
-    .button {
-        font-size: 13px;
-        line-height: 15px;
-    }
-}
-
-@media (max-width: $breakpoint-width-s) {
-    .button {
-        font-size: 8px;
-        line-height: 10px;
-    }
+    &::-moz-focus-inner {border:0;}
 }
 
 

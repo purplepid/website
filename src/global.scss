@@ -1,0 +1,40 @@
+@import "variables";
+
+html {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    font-family: "Rubik", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: left;
+    background: $purple;
+}
+
+#___gatsby, #___gatsby > div, body, html {
+    min-height: 100vh;
+}
+
+#___gatsby > div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+a {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: transparent;
+
+    &:hover,
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+::selection { background: #FFFFFF; color: $orange }

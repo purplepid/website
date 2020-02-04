@@ -5,7 +5,12 @@ module.exports = {
         author: 'Bruno Mikec & Marc Neander'
     },
     plugins: [
-        'gatsby-plugin-sass',
+        {
+            resolve: 'gatsby-plugin-sass',
+            options: {
+                includePaths: [`${__dirname}/src`]
+            }
+        },
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-offline',
         'gatsby-transformer-sharp',
@@ -13,7 +18,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-google-fonts',
             options: {
-                fonts: ['Rubik']
+                fonts: ['Rubik:400,500,700']
             }
         },
         {

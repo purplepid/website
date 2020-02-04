@@ -1,8 +1,18 @@
-.headerContent {
-    margin: 0 auto 1.45rem;
+@import "variables";
+
+.wrap {
+    margin: $gutter / 2 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1.45rem 1.0875rem;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 100%;
+
+    max-width: 920px;
+
+    @media (min-width: $breakpoint) {
+        margin-bottom: $gutter-lg;
+    }
 }

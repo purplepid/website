@@ -1,0 +1,15 @@
+@import "variables";
+
+.container {
+    width: 100%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    width: 100%;
+
+    @media (min-width: $breakpoint) {
+        width: $container-width;
+    }
+}

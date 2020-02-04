@@ -1,55 +1,47 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import style from './Button.module.scss';
 
 const propTypes = {
-    color: PropTypes.string,
-    background: PropTypes.string,
+    as: PropTypes.oneOf(['a', 'button']),
     children: PropTypes.node.isRequired,
     disabled: PropTypes.bool,
     onClick: PropTypes.func
 };
 
 const defaultProps = {
+    as: 'button',
     disabled: false,
-    color: '',
-    background: '',
     onClick: () => {}
 };
 
-const CustomButton = props => {
-    const { color, background, children, onClick, disabled, ...attributes } = props;
+const Button = props => {
+    const { as: Tag, children, onClick, disabled, ...attributes } = props;
 
-    const buttonOnClick = useCallback(
-        e => {
-            if (disabled) {
-                e.preventDefault();
-                return;
-            }
+    const handleClick = e => {
+        if (disabled) {
+            e.preventDefault();
+            return;
+        }
 
-            if (onClick) {
-                onClick(e);
-            }
-        },
-        [disabled, onClick]
-    );
+        if (onClick) {
+            onClick(e);
+        }
+    };
+
+    if (Tag === 'button' && !attributes.type) {
+        attributes.type = 'button';
+    }
 
     return (
-        <button
-            type="button"
-            disabled={disabled}
-            className={style.button}
-            style={{ color, background, borderColor: background }}
-            onClick={buttonOnClick}
-            {...attributes}
-        >
+        <Tag disabled={disabled} className={style.button} onClick={handleClick} {...attributes}>
             {children}
-        </button>
+        </Tag>
     );
 };
 
-CustomButton.propTypes = propTypes;
-CustomButton.defaultProps = defaultProps;
+Button.propTypes = propTypes;
+Button.defaultProps = defaultProps;
 
-export default CustomButton;
+export default Button;

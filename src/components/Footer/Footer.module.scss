@@ -1,8 +1,7 @@
+@import "variables";
+
 .footerContent {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
+    padding: $gutter 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,6 +21,8 @@
     .socialIcon {
         height: 42px;
         width: 42px;
+        background: #ffffff;
+        color: $purple;
         border: 1px solid #ffffff;
         border-radius: 50%;
         margin: 5px;
@@ -45,7 +46,6 @@
 
         &:hover,
         &:active {
-            border-radius: 0px;
             border-color: transparent;
             background: #ffffff;
         }
