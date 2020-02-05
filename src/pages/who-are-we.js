@@ -1,17 +1,16 @@
 import React from 'react';
 
-import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Container from '../components/Container';
 
 const WhoAreWe = () => (
-    <Layout>
+    <React.Fragment>
         <SEO title="who are we?" />
         <Container>
             <h1>who are we?</h1>
-            <p>TBA</p>
+            <p>coming soon...</p>
         </Container>
-    </Layout>
+    </React.Fragment>
 );
 
 export default WhoAreWe;

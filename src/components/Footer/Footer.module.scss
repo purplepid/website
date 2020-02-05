@@ -1,60 +1,20 @@
 @import "variables";
 
-.footerContent {
+.wrap {
     padding: $gutter 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    .followUs {
+    p {
         margin: 15px 0;
     }
 }
 
-.socialIconsContainer {
+.icons-wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    .socialIcon {
-        height: 42px;
-        width: 42px;
-        background: #ffffff;
-        color: $purple;
-        border: 1px solid #ffffff;
-        border-radius: 50%;
-        margin: 5px;
-        cursor: pointer;
-        text-align: center;
-        transition: border-radius 0.3s;
-        transition-timing-function: linear;
-
-        .innerIconContainer {
-            height: 24px;
-            width: 24px;
-            background-repeat: no-repeat;
-            left: 22%;
-            top: 22%;
-            position: relative;
-
-            :first-child {
-                font-size: 24px;
-            }
-        }
-
-        &:hover,
-        &:active {
-            border-color: transparent;
-            background: #ffffff;
-        }
-
-        &:hover .innerIconContainer,
-        &:active .innerIconContainer {
-            :first-child {
-                color: #a05fff;
-            }
-        }
-    }
 }

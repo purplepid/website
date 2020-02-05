@@ -1,19 +1,24 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "purplepid-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "purplepid official website",
+  "author": "Bruno Mikec <bruno@purplepid.com>",
+  "contributors": ["Marc Neander <marc@purplepid.com>"],
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
-    "@fortawesome/free-regular-svg-icons": "^5.11.2",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.7",
+    "@purplepid/eslint-config-react": "0.0.1",
+    "@testing-library/dom": "^6.8.1",
+    "@testing-library/react": "^9.3.0",
+    "babel-jest": "^25.1.0",
+    "babel-preset-gatsby": "^0.2.20",
+    "classnames": "^2.2.6",
     "gatsby": "^2.16.1",
     "gatsby-image": "^2.2.29",
     "gatsby-plugin-google-analytics": "^2.1.23",
     "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-layout": "^1.1.22",
     "gatsby-plugin-manifest": "^2.2.23",
     "gatsby-plugin-offline": "^3.0.16",
     "gatsby-plugin-react-helmet": "^3.1.13",
@@ -22,11 +27,13 @@
     "gatsby-source-filesystem": "^2.1.33",
     "gatsby-transformer-json": "^2.2.15",
     "gatsby-transformer-sharp": "^2.2.23",
+    "jest": "^25.1.0",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-test-renderer": "^16.11.0"
   },
   "browserslist": [
     "> 1% in SE"
@@ -35,43 +42,17 @@
     "extends": [
       "@purplepid/react"
     ],
-    "plugins": [
-        "cypress"
-    ],
     "env": {
       "node": true,
-      "jest": true,
-      "cypress/globals": true
+      "jest": true
     }
   },
-  "devDependencies": {
-    "@purplepid/eslint-config-react": "0.0.1",
-    "@testing-library/dom": "^6.8.1",
-    "@testing-library/react": "^9.3.0",
-    "babel-jest": "^25.1.0",
-    "babel-preset-gatsby": "^0.2.20",
-    "editorconfig": "0.15.3",
-    "eslint-plugin-cypress": "^2.8.1",
-    "jest": "^25.1.0",
-    "react-test-renderer": "^16.11.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "jest",
     "lint": "eslint ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

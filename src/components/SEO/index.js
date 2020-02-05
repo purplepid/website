@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ description, lang, meta, title }) => {
+const SEO = ({ description, meta, title }) => {
     const { site } = useStaticQuery(
         graphql`
             query {
@@ -21,53 +21,23 @@ const SEO = ({ description, lang, meta, title }) => {
     const metaDescription = description || site.siteMetadata.description;
 
     return (
-        <Helmet
-            htmlAttributes={{
-                lang
-            }}
-            defaultTitle="purplepid"
-            titleTemplate="purplepid - %s"
-            title={title}
-            meta={[
-                {
-                    name: `description`,
-                    content: metaDescription
-                },
-                {
-                    property: `og:title`,
-                    content: title
-                },
-                {
-                    property: `og:description`,
-                    content: metaDescription
-                },
-                {
-                    property: `og:type`,
-                    content: `website`
-                },
-                {
-                    name: `twitter:card`,
-                    content: `summary`
-                },
-                {
-                    name: `twitter:creator`,
-                    content: site.siteMetadata.author
-                },
-                {
-                    name: `twitter:title`,
-                    content: title
-                },
-                {
-                    name: `twitter:description`,
-                    content: metaDescription
-                }
-            ].concat(meta)}
-        />
+        <Helmet defaultTitle="purplepid" titleTemplate="purplepid - %s" title={title} meta={meta}>
+            <html lang="en" />
+            <meta name="description" content={metaDescription} />
+
+            {/* favicon */}
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+            <link rel="manifest" href="/site.webmanifest" />
+            <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#771bff" />
+            <meta name="msapplication-TileColor" content="#ffffff" />
+            <meta name="theme-color" content="#ffffff" />
+        </Helmet>
     );
 };
 
 SEO.defaultProps = {
-    lang: `en`,
     meta: [],
     description: undefined,
     title: undefined
@@ -75,7 +45,6 @@ SEO.defaultProps = {
 
 SEO.propTypes = {
     description: PropTypes.string,
-    lang: PropTypes.string,
     meta: PropTypes.arrayOf(PropTypes.object),
     title: PropTypes.string
 };

@@ -1,17 +1,15 @@
 import React from 'react';
-
-import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Container from '../components/Container';
 
 const ContactPage = () => (
-    <Layout>
+    <React.Fragment>
         <SEO title="contact us" />
         <Container>
             <h1>contact us</h1>
-            <p>TBA</p>
+            <p>coming soon...</p>
         </Container>
-    </Layout>
+    </React.Fragment>
 );
 
 export default ContactPage;

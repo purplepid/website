@@ -11,6 +11,5 @@ module.exports = {
     globals: {
         __PATH_PREFIX__: ``
     },
-    testURL: `http://localhost:8000`,
-    setupFiles: [`<rootDir>/loadershim.js`]
+    testURL: `http://localhost:8000`
 };

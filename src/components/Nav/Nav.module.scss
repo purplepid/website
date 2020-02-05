@@ -3,48 +3,9 @@
 .wrap {
     display: flex;
     margin-left: 8px;
-}
+    display: none;
 
-
-.nav-link {
-    display: inline-block;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.85);
-    text-align: center;
-    line-height: 22px;
-    font-weight: 500;
-    position: relative;
-    padding: 0.75rem 1rem;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: transparent;
-
-    &:hover,
-    &:active,
-    &:focus {
-        color: #FFFFFF;
-    }
-
-    &:active,
-    &:focus {
-        font-weight: 700;
-    }
-
-    &::after {
-        content: attr(title);
-        font-weight: 700;
-        height: 0;
-        overflow: hidden;
+    @media (min-width: $breakpoint) {
         display: block;
-        visibility: hidden;
     }
 }
-
-.nav-link-active {
-    color: #FFFFFF;
-    font-weight: 700;
-    background-color: darken($color: $purple, $amount: 10%);
-    border-bottom-color: darken($color: $purple, $amount: 20%);
-    border-radius: 10px;
-}
-

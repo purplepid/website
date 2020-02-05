@@ -3,16 +3,18 @@
 .wrap {
     margin: $gutter / 2 auto;
     display: flex;
+    box-sizing: border-box;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-left: 4px;
-    padding-right: 4px;
+    padding-right: $gutter;
     width: 100%;
 
     max-width: 920px;
 
     @media (min-width: $breakpoint) {
         margin-bottom: $gutter-lg;
+        padding-right: 4px;
     }
 }
