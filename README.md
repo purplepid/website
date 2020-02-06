@@ -1,5 +1,5 @@
 # website
-purplepid offical website
+purplepid official website
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6c3eb757-3173-4c9f-a355-ed7411163b2c/deploy-status)](https://app.netlify.com/sites/purplepid/deploys)
 
